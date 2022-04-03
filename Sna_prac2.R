@@ -1,0 +1,10 @@
+getwd()
+nodes <- read.csv("C:/Users/HP/Downloads/nodes.csv")
+head(nodes)
+links <- read.csv("C:/Users/HP/Downloads/edges.csv")
+head(links)
+net <- graph.data.frame(d=links, vertices=nodes, directed=T)
+m=as.matrix(net)
+get.adjacency(m)
+plot(net)
+
